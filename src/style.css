@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.big-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./img/pastel_background.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 60%;
+  background-color: rgb(214, 177, 145);
+}
+
+h1,
+h2,
+.input {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  margin-top: 50px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Merienda", cursive;
+  color: rgb(85, 54, 45);
+  text-shadow: 0 0 3px #fff;
+  margin-bottom: 20px;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+#inputField {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  margin-right: 4px;
+}
+
+#addToDo {
+  width: 60px;
+  height: 40px;
+  background: rgb(85, 54, 45);
+  color: #fff;
+}
+
+#inputField,
+#addToDo {
+  outline: none;
+  vertical-align: middle;
+  font-family: montserrat;
+  font-size: 20px;
+  border: 1px solid rgb(85, 54, 45);
+  border-radius: 5px;
+}
+
+#addToDo:hover {
+  cursor: pointer;
+}
+
+#list-container {
+  background-color: white;
+  height: 60%;
+  width: 80%;
+  margin: 30px auto;
+  border-radius: 20px;
+  overflow: auto;
+}
+
+.paragraphList {
+  font-family: Montserrat;
+  font-size: 40px;
+  margin: 10px 20px;
+}
+
+.paragraphList:hover {
+  cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(218, 185, 176);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(85, 54, 45);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(104, 75, 68);
+}
