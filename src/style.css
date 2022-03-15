@@ -16,6 +16,10 @@
 .container {
   width: 60%;
   background-color: rgb(214, 177, 145);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -43,6 +47,34 @@ h1 {
 h1:hover {
   cursor: pointer;
   color: rgb(255, 255, 255);
+}
+
+.container .description {
+  width: 60%;
+  height: 70px;
+  background-color: rgb(236, 233, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 7px 0;
+  border-radius: 10px;
+}
+
+.container .description ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .description ul li {
+  list-style: none;
+  margin: 5px 0;
+  font-family: montserrat;
+  font-weight: 500;
+}
+
+.container .description ul .one-click {
+  text-decoration: line-through;
 }
 
 #inputField {
@@ -94,7 +126,7 @@ h1:hover {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
 }
 
 /* Track */
@@ -111,4 +143,69 @@ h1:hover {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(104, 75, 68);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .big-container .container {
+    width: 85%;
+  }
+
+  .big-container .container .title h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .big-container .container .title h2 {
+    text-align: center;
+  }
+
+  .big-container .container .description {
+    width: 90%;
+    height: 80px;
+  }
+  .big-container .container .description ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .big-container .container .description ul li {
+    margin: 3px 0;
+  }
+
+  .big-container .container .input {
+    width: 100%;
+  }
+
+  .big-container .container .input #inputField {
+    width: 70%;
+  }
+
+  .paragraphList {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .big-container .container {
+    width: 75%;
+  }
+
+  .big-container .container .description {
+    width: 60%;
+    height: 80px;
+  }
+  .big-container .container .description ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .big-container .container .description ul li {
+    margin: 3px 0;
+  }
+
+  .paragraphList {
+    font-size: 32px;
+  }
 }
